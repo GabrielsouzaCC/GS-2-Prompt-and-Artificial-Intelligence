@@ -29,7 +29,7 @@ Um agente só, montado como um grafo de 4 nós. Só o nó `responder` usa IA; os
 ```mermaid
 graph TD
     A([pergunta]) --> B[validar_entrada<br/>lógica]
-    B -- vazia / longa / sem letras --> E[finalizar<br/>lógica: garante o aviso]
+    B -- vazia / longa / sem sentido --> E[finalizar<br/>lógica: garante o aviso]
     B -- válida --> C[proteger_dados<br/>lógica: mascara CPF, telefone, e-mail<br/>e marca suspeita de injection]
     C --> D[responder<br/>IA: Gemini + 7 fichas no prompt]
     D --> E
